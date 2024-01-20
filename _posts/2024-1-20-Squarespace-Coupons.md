@@ -1,6 +1,6 @@
 ---
 layout: post
-title: squarespace-coupons
+title: Welcome to Your Awesome Blog!
 ---
 
 Hey there! 👋 You've officially kicked off your blog – congrats! 🚀 Now, let's add a special treat for your readers.
@@ -9,9 +9,12 @@ Hey there! 👋 You've officially kicked off your blog – congrats! 🚀 Now, l
 
 Ready to grab a discount? Click the button below:
 
-<button>Get 10% Off</button>
+<button onclick="revealCoupon()">Get 10% Off</button>
 
-Your Coupon Code: `BLOG10`
+<!-- Hidden Coupon -->
+<div id="coupon" style="display: none;">
+    Your Coupon Code: `BLOG10`
+</div>
 
 ### Customize Your Site
 
@@ -26,3 +29,14 @@ Ready to dive into your first post? Fantastic! Head over to the /_posts/ directo
 For more detailed instructions and tips, swing by the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub. There's a treasure trove of insights waiting for you!
 
 Happy blogging! 🎉
+
+<!-- JavaScript to reveal coupon and open affiliate link -->
+<script>
+    function revealCoupon() {
+        // Reveal the hidden coupon div
+        document.getElementById("coupon").style.display = "block";
+
+        // Open affiliate link in a new tab
+        window.open("https://your-affiliate-link.com", "_blank");
+    }
+</script>
